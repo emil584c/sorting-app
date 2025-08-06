@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --radius: 0.75rem;
+  
+  --color-background: oklch(100% 0 0);
+  --color-foreground: oklch(9% 0.026 237.69);
+  --color-card: oklch(100% 0 0);
+  --color-card-foreground: oklch(9% 0.026 237.69);
+  --color-popover: oklch(100% 0 0);
+  --color-popover-foreground: oklch(9% 0.026 237.69);
+  --color-primary: oklch(62.18% 0.194 239.75);
+  --color-primary-foreground: oklch(98% 0.013 237.69);
+  --color-secondary: oklch(96% 0.016 237.69);
+  --color-secondary-foreground: oklch(9% 0.026 237.69);
+  --color-muted: oklch(96% 0.016 237.69);
+  --color-muted-foreground: oklch(52.18% 0.026 237.69);
+  --color-accent: oklch(96% 0.016 237.69);
+  --color-accent-foreground: oklch(9% 0.026 237.69);
+  --color-destructive: oklch(72.22% 0.19 27.33);
+  --color-destructive-foreground: oklch(98% 0.013 237.69);
+  --color-border: oklch(91.4% 0.032 237.69);
+  --color-input: oklch(91.4% 0.032 237.69);
+  --color-ring: oklch(62.18% 0.194 239.75);
+  
+  --color-blue-50: oklch(97% 0.013 240.01);
+  --color-blue-600: oklch(57.3% 0.148 262.05);
+  --color-green-50: oklch(96.5% 0.025 142.5);
+  --color-green-600: oklch(58.17% 0.126 162.5);
+  --color-purple-50: oklch(96% 0.02 307.5);
+  --color-purple-600: oklch(56.29% 0.155 307.5);
+  --color-red-50: oklch(96.8% 0.02 17.38);
+  --color-red-600: oklch(63.02% 0.176 27.33);
+}
+
+.dark {
+  --color-background: oklch(9% 0.026 237.69);
+  --color-foreground: oklch(98% 0.013 237.69);
+  --color-card: oklch(9% 0.026 237.69);
+  --color-card-foreground: oklch(98% 0.013 237.69);
+  --color-popover: oklch(9% 0.026 237.69);
+  --color-popover-foreground: oklch(98% 0.013 237.69);
+  --color-primary: oklch(69.71% 0.167 243.58);
+  --color-primary-foreground: oklch(9% 0.026 237.69);
+  --color-secondary: oklch(20% 0.032 237.69);
+  --color-secondary-foreground: oklch(98% 0.013 237.69);
+  --color-muted: oklch(20% 0.032 237.69);
+  --color-muted-foreground: oklch(70% 0.026 237.69);
+  --color-accent: oklch(20% 0.032 237.69);
+  --color-accent-foreground: oklch(98% 0.013 237.69);
+  --color-destructive: oklch(36.89% 0.125 27.33);
+  --color-destructive-foreground: oklch(98% 0.013 237.69);
+  --color-border: oklch(20% 0.032 237.69);
+  --color-input: oklch(20% 0.032 237.69);
+  --color-ring: oklch(94.1% 0.076 243.58);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: system-ui, sans-serif;
+  }
+}

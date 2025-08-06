@@ -1,0 +1,20 @@
+{
+  "name": "home-organization-app",
+  "version": "1.0.0",
+  "description": "A comprehensive home organization web application with flexible category management",
+  "scripts": {
+    "dev": "concurrently \"npm run client:dev\" \"npm run server:dev\"",
+    "build": "npm run client:build && npm run server:build",
+    "client:dev": "cd client && npm run dev",
+    "client:build": "cd client && npm run build",
+    "server:dev": "cd server && npm run dev",
+    "server:build": "cd server && npm run build",
+    "server:start": "cd server && npm start",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "author": "",
+  "license": "MIT"
+}
